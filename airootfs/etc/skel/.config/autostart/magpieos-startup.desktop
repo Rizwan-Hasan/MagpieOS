@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=magpieos-startup
+GenericName=Startup MagpieOS
+Comment=Startup sound configuration for MagpieOS
+Exec=/opt/magpieos-startup/startup.sh
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Qt;System;
+Name[en_US]=magpieos-startup

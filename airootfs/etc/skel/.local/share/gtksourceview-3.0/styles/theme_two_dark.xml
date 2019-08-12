@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<style-scheme id="two_dark" _name="Two Dark" version="1.0">
+	<author>Peter van der Velde</author>
+	<_description>Atom One Dark based Theme for Gedit/Scribes/Scratch.</_description>
+
+<!-- COLORS -->
+	<color name="comment_color" value="#5f5a60"/>
+	<color name="number_color" value="#d19a66"/>
+	<color name="string_color" value="#98c379"/>
+	<color name="boolean_color" value="#d19a66"/>
+	<color name="keyword_color" value="#c678dd"/>
+	<color name="error_color" value="#efefef"/>
+	<color name="text_fg" value="#abb2bf"/>
+	<color name="text_bg" value="#282c34"/>
+	<color name="line_highlight" value="#2c313a"/>
+	<color name="shebang_color" value="#d19a66"/> <!-- same color as a boolean/number -->
+	<color name="function_color" value="#5cb0f5"/>
+	<color name="selection_color" value="#b6bdc8"/>
+
+  
+<!-- Global Settings -->
+	<style name="text" foreground="text_fg" background="text_bg"/>
+	<style name="cursor" foreground="function_color"/>
+	<style name="current-line" background="line_highlight"/>
+	<style name="line-numbers" foreground="comment_color" background="text_bg"/>
+	<style name="selection" foreground="comment_color" background="selection_color"/>
+
+<!-- Bracket Matching -->
+	<style name="bracket-match" foreground="text_bg" background="keyword_color"/>
+	<style name="bracket-mismatch" background="error_color"/>
+	<style name="search-match" foreground="comment_color" background="text_fg"/>
+
+<!-- Base syntax colors
+
+Languages: plain, python, ruby, xml, html, ada, asp, awk, boo, c,
+changelog, chdr, cmake, cpp, csharp, css, d, def, desktop, diff,
+docbook, dosbatch, dot, dpatch, dtd, eiffel, erlang, forth, fortran,
+gap, gtkrc, haddock, haskell, haskell-literate, idl, ini, java,
+javascript, latex, libtool, lua, m4, makefile, msil, nermele, nsis,
+objc, ocaml, ocl, octave, pascal, perl, php, pkgconfig, po, prolog,
+R, rpmspec, scheme, sh, sql, t2t, tcl, texinfo, vala, vbnet, verilog,
+vhdl, xslt, yacc
+
+-->
+
+	<style name="def:string" foreground="string_color"/>
+	<style name="def:character" foreground="string_color"/>
+	<style name="def:special-char" foreground="string_color"/>
+	<style name="def:number" foreground="number_color"/>
+	<style name="def:decimal" foreground="number_color"/>
+	<style name="def:floating-point" foreground="number_color"/>
+	<style name="def:complex" foreground="number_color"/>
+	<style name="def:base-n-integer" foreground="number_color"/>
+	<style name="def:boolean" foreground="boolean_color"/>
+
+	<style name="def:builtin" foreground="keyword_color"/>
+	<style name="def:keyword" foreground="keyword_color"/>
+	<style name="def:function" foreground="function_color"/>
+	<style name="def:type" foreground="keyword_color"/>
+	<style name="def:preprocessor" foreground="keyword_color"/>
+	<style name="def:identifier" foreground="keyword_color"/>
+	<style name="def:operator" foreground="keyword_color"/>
+	<style name="def:statement" foreground="keyword_color"/>
+
+	<style name="def:constant" foreground="number_color"/>
+	<style name="def:special-constant" foreground="keyword_color"/>
+	<style name="def:error" foreground="error_color" background="text_bg"/>
+
+<!-- Comments -->
+	<style name="def:comment" foreground="comment_color"/>
+	<style name="def:shebang" foreground="shebang_color"/>
+	<style name="def:doc-comment-element" foreground="comment_color"/>
+	<style name="def:note" foreground="comment_color"/>
+
+</style-scheme>
