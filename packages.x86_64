@@ -141,28 +141,28 @@ smplayer-themes
 chromium
 flashplugin
 
-# ## Virtualbox Tools
+## Virtualbox Tools
 
+virtualbox-guest-utils
+virtualbox-guest-modules-arch
+# virtualbox-host-dkms
 # virtualbox-guest-utils
-# virtualbox-guest-modules-arch
-# # virtualbox-host-dkms
-# # virtualbox-guest-utils
 
-# ## Essential Packages
+## Essential Packages
 
-# adobe-source-code-pro-fonts
-# bleachbit
-# cups
-# chrome-gnome-shell
-# codeblocks
-# filezilla
-# gparted
-# gufw
-# libreoffice-fresh
-# gimp
-# ttf-fira-code
-# otf-fira-code
-# simplescreenrecorder
+adobe-source-code-pro-fonts
+bleachbit
+cups
+chrome-gnome-shell
+codeblocks
+filezilla
+gparted
+gufw
+libreoffice-fresh
+gimp
+ttf-fira-code
+otf-fira-code
+simplescreenrecorder
 
 ## Themes
 
@@ -195,54 +195,54 @@ pamac
 wd719x-firmware
 yay
 
-# ## Extra Packages
+## Extra Packages
 
-# yaml-cpp
-# kconfig
-# kcoreaddons
-# qt5-svg
-# qt5-xmlpatterns
-# polkit-qt5
-# kauth
-# kcodecs
-# kguiaddons
-# ki18n
-# kwidgetsaddons
-# kconfigwidgets
-# kitemviews
-# karchive
-# kiconthemes
-# kjobwidgets
-# kdbusaddons
-# kwindowsystem
-# kcrash
-# kglobalaccel
-# kcompletion
-# kservice
-# lilv
-# tk
-# lv2
-# sonnet
-# qt5-multimedia
-# qt5-speech
-# ktextwidgets
-# attica
-# kxmlgui
-# kbookmarks
-# libdbusmenu-qt5
-# knotifications
-# kwallet
-# kio
-# qt5-sensors
-# qt5-webchannel
-# qt5-webkit
-# python2-dbus
-# python2-gobject
-# kpmcore
-# python-nautilus
-# python2-psutil
-# python2-xapp
-# serd
-# sord
-# sratom
-# xapps
+yaml-cpp
+kconfig
+kcoreaddons
+qt5-svg
+qt5-xmlpatterns
+polkit-qt5
+kauth
+kcodecs
+kguiaddons
+ki18n
+kwidgetsaddons
+kconfigwidgets
+kitemviews
+karchive
+kiconthemes
+kjobwidgets
+kdbusaddons
+kwindowsystem
+kcrash
+kglobalaccel
+kcompletion
+kservice
+lilv
+tk
+lv2
+sonnet
+qt5-multimedia
+qt5-speech
+ktextwidgets
+attica
+kxmlgui
+kbookmarks
+libdbusmenu-qt5
+knotifications
+kwallet
+kio
+qt5-sensors
+qt5-webchannel
+qt5-webkit
+python2-dbus
+python2-gobject
+kpmcore
+python-nautilus
+python2-psutil
+python2-xapp
+serd
+sord
+sratom
+xapps
