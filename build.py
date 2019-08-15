@@ -74,9 +74,10 @@ class MainWork():
         with open('build.sh', 'w') as file:
             file.write(self.scriptData)
         subprocess.call('chmod +x build.sh', shell=True)
-        subprocess.call('mkdir airootfs/root', shell=True)
+        subprocess.call('mkdir -v airootfs/root', shell=True)
         subprocess.call('sudo chmod 777 airootfs/root', shell=True)
-        subprocess.call('cp -f root_customizer.sh airootfs/root/customize_airootfs.sh', shell=True)
+        subprocess.call('cp -vf root_customizer.sh airootfs/root/customize_airootfs.sh', shell=True)
+        subprocess.call('cp -vf .automated_script.sh airootfs/root/.automated_script.sh', shell=True)
         subprocess.call('sudo chmod +x airootfs/root/customize_airootfs.sh', shell=True)
         subprocess.call('sudo chmod 777 airootfs/root/customize_airootfs.sh', shell=True)
 

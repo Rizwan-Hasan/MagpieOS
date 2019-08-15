@@ -56,12 +56,12 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #############################################################################
 
-# ############################# Removing packages ############################################################
-pacman -R --noconfirm swell-foop tali gnome-mines gnome-tetravex gnome-recipes accerciser gnome-boxes
-pacman -R --noconfirm gnome-nibbles gnome-sudoku hitori quadrapassel gnome-builder devhelp lftp gnome-software
-pacman -R --noconfirm gnome-robots five-or-more four-in-a-row gnome-mahjongg ipython gnome-backgrounds
-pacman -R --noconfirm gnome-klotski gnome-taquin iagno lightsoff polari gnome-multi-writer epiphany 
-# ############################################################################################################
+# # ############################# Removing packages ############################################################
+# pacman -R --noconfirm swell-foop tali gnome-mines gnome-tetravex gnome-recipes accerciser gnome-boxes
+# pacman -R --noconfirm gnome-nibbles gnome-sudoku hitori quadrapassel gnome-builder devhelp lftp gnome-software
+# pacman -R --noconfirm gnome-robots five-or-more four-in-a-row gnome-mahjongg ipython gnome-backgrounds
+# pacman -R --noconfirm gnome-klotski gnome-taquin iagno lightsoff polari gnome-multi-writer epiphany 
+# # ############################################################################################################
 
 # ############ Installing custom packages to rootfs ###############
 cd /etc/skel/.magpie-packages && pacman -U --noconfirm *.pkg.tar.xz
@@ -72,11 +72,11 @@ rm -drv /etc/pacman.conf
 cp -v /etc/skel/.magpie-settings/pacman.conf /etc/
 # ##########################################################
 
-# ############################ MagpieOS Install Desktop File #####################################
-cp -v /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
-chmod +x /home/liveuser/.config/autostart/calamares.desktop
-# ################################################################################################
+# # ############################ MagpieOS Install Desktop File #####################################
+# cp -v /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
+# chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
+# chmod +x /home/liveuser/.config/autostart/calamares.desktop
+# # ################################################################################################
 
 # ########## Adding custom /etc/nanorc for Nano ########
 mv -vf /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
@@ -101,21 +101,21 @@ cp /etc/skel/.magpie-settings/ntp.conf /etc/
 mv -f /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
 # ########################################################
 
-# ###################### Adding MagpieOS Logo in gdm login screen #############################
-sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo '/etc/skel/.mapieos-logo.png'
-dconf update
-# #############################################################################################
+# # ###################### Adding MagpieOS Logo in gdm login screen #############################
+# sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo '/etc/skel/.mapieos-logo.png'
+# dconf update
+# # #############################################################################################
 
-# ###################### Adding cursor theme in  gdm login screen ########################
-sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme 'Neon-Blue'
-dconf update
-# ########################################################################################
+# # ###################### Adding cursor theme in  gdm login screen ########################
+# sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme 'Neon-Blue'
+# dconf update
+# # ########################################################################################
 
-# ####################### Tap to click support for gnome settings ############################
-rm -rf /usr/share/X11/xorg.conf.d/70-synaptics.conf
-sudo -u gdm dbus-launch gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
-dconf update
-# ############################################################################################
+# # ####################### Tap to click support for gnome settings ############################
+# rm -rf /usr/share/X11/xorg.conf.d/70-synaptics.conf
+# sudo -u gdm dbus-launch gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+# dconf update
+# # ############################################################################################
 
 # ########### Adding Gnome File Manager(Nautilus) drive mount without password #############
 cp -f /etc/skel/.magpie-settings/org.freedesktop.UDisks2.policy /usr/share/polkit-1/actions/
@@ -126,16 +126,18 @@ rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
 # ###############################
 
-# ## Unmuting speakers ##
-amixer sset Master unmute
-# #######################
+# # ## Unmuting speakers ##
+# amixer sset Master unmute
+# # #######################
 
 # ### Fixing Permisssion ##
 chmod 755 /
 # #########################
 
 # ###########################################################################
-systemctl enable pacman-init.service choose-mirror.service NetworkManager gdm
-systemctl enable ntpd bluetooth org.cups.cupsd
-systemctl set-default graphical.target
+# systemctl enable pacman-init.service choose-mirror.service NetworkManager gdm
+systemctl enable pacman-init.service choose-mirror.service
+# systemctl enable ntpd bluetooth org.cups.cupsd
+# systemctl set-default graphical.target
+systemctl set-default multi-user.target
 # ###########################################################################
