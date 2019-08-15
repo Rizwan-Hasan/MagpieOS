@@ -101,21 +101,21 @@ cp /etc/skel/.magpie-settings/ntp.conf /etc/
 mv -f /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
 # ########################################################
 
-# # ###################### Adding MagpieOS Logo in gdm login screen #############################
-# sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo '/etc/skel/.mapieos-logo.png'
-# dconf update
-# # #############################################################################################
+# ###################### Adding MagpieOS Logo in gdm login screen #############################
+sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo '/etc/skel/.mapieos-logo.png'
+dconf update
+# #############################################################################################
 
-# # ###################### Adding cursor theme in  gdm login screen ########################
-# sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme 'Neon-Blue'
-# dconf update
-# # ########################################################################################
+# ###################### Adding cursor theme in  gdm login screen ########################
+sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme 'Neon-Blue'
+dconf update
+# ########################################################################################
 
-# # ####################### Tap to click support for gnome settings ############################
-# rm -rf /usr/share/X11/xorg.conf.d/70-synaptics.conf
-# sudo -u gdm dbus-launch gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
-# dconf update
-# # ############################################################################################
+# ####################### Tap to click support for gnome settings ############################
+rm -rf /usr/share/X11/xorg.conf.d/70-synaptics.conf
+sudo -u gdm dbus-launch gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+dconf update
+# ############################################################################################
 
 # ########### Adding Gnome File Manager(Nautilus) drive mount without password #############
 cp -f /etc/skel/.magpie-settings/org.freedesktop.UDisks2.policy /usr/share/polkit-1/actions/
@@ -126,9 +126,9 @@ rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
 # ###############################
 
-## Unmuting speakers ##
+# ## Unmuting speakers ##
 amixer sset Master unmute
-#######################
+# #######################
 
 # ### Fixing Permisssion ##
 chmod 755 /
@@ -136,8 +136,6 @@ chmod 755 /
 
 # ###########################################################################
 systemctl enable pacman-init.service choose-mirror.service NetworkManager gdm
-systemctl enable pacman-init.service choose-mirror.service
-# systemctl enable ntpd bluetooth org.cups.cupsd
+systemctl enable ntpd bluetooth org.cups.cupsd
 systemctl set-default graphical.target
-systemctl set-default multi-user.target
 # ###########################################################################
