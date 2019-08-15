@@ -126,18 +126,18 @@ rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
 # ###############################
 
-# # ## Unmuting speakers ##
+# ## Unmuting speakers ##
 # amixer sset Master unmute
-# # #######################
+# #######################
 
 # ### Fixing Permisssion ##
 chmod 755 /
 # #########################
 
 # ###########################################################################
-# systemctl enable pacman-init.service choose-mirror.service NetworkManager gdm
+systemctl enable pacman-init.service choose-mirror.service NetworkManager gdm
 systemctl enable pacman-init.service choose-mirror.service
 # systemctl enable ntpd bluetooth org.cups.cupsd
-# systemctl set-default graphical.target
+systemctl set-default graphical.target
 systemctl set-default multi-user.target
 # ###########################################################################

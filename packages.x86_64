@@ -173,27 +173,27 @@ oxygen-neon-blue-cursor
 qt5ct
 qt5-styleplugins
 
-# ## Magpie Repository
+## Magpie Repository
 
-# aic94xx-firmware
-# zd1211-firmware
-# breeze-cursor-theme
-# breeze-adapta-cursor-theme
-# ckbcomp
-# fetchmirrors
-# grub-themes-magpie
-# magpie-cursor
-# magpie-mirrorlist
-# magpieos-wallpaper
-# magpieos-startup
+aic94xx-firmware
+zd1211-firmware
+breeze-cursor-theme
+breeze-adapta-cursor-theme
+ckbcomp
+fetchmirrors
+grub-themes-magpie
+magpie-cursor
+magpie-mirrorlist
+magpieos-wallpaper
+magpieos-startup
 mkinitcpio-numlock
 mkinitcpio-openswap
-# openbangla-keyboard
-# ttf-freebanglafont
-# package-query
-# pamac
-# wd719x-firmware
-# yay
+openbangla-keyboard
+ttf-freebanglafont
+package-query
+pamac
+wd719x-firmware
+yay
 
 # ## Extra Packages
 
