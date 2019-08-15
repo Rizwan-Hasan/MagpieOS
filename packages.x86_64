@@ -122,19 +122,19 @@ dconf
 gconf
 nautilus-share
 
-# ## Multimedia
+## Multimedia
 
-# alsa-utils
-# gstreamer
-# phonon-qt5-gstreamer
-# gst-libav
-# gst-plugins-bad
-# gst-plugins-base
-# gst-plugins-good
-# gst-plugins-ugly
-# smplayer
-# smplayer-skins
-# smplayer-themes
+alsa-utils
+gstreamer
+phonon-qt5-gstreamer
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+smplayer
+smplayer-skins
+smplayer-themes
 
 ## Internet
 

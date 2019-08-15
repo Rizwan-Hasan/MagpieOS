@@ -126,9 +126,9 @@ rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
 # ###############################
 
-# ## Unmuting speakers ##
-# amixer sset Master unmute
-# #######################
+## Unmuting speakers ##
+amixer sset Master unmute
+#######################
 
 # ### Fixing Permisssion ##
 chmod 755 /
