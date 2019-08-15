@@ -136,11 +136,10 @@ nautilus-share
 # smplayer-skins
 # smplayer-themes
 
-# ## Internet
+## Internet
 
-# chromium
-# # firefox
-# flashplugin
+chromium
+flashplugin
 
 # ## Virtualbox Tools
 
@@ -165,14 +164,14 @@ nautilus-share
 # otf-fira-code
 # simplescreenrecorder
 
-# ## Themes
+## Themes
 
-# adapta-gtk-theme
-# qogir-gtk-theme
-# papirus-icon-theme
-# oxygen-neon-blue-cursor
-# qt5ct
-# qt5-styleplugins
+adapta-gtk-theme
+qogir-gtk-theme
+papirus-icon-theme
+oxygen-neon-blue-cursor
+qt5ct
+qt5-styleplugins
 
 # ## Magpie Repository
 
