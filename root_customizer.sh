@@ -131,6 +131,7 @@ amixer sset Master unmute
 # #######################
 
 # ### Fixing Permisssion ##
+chown root:root /
 chmod 755 /
 # #########################
 
