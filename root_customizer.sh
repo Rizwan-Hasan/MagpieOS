@@ -56,12 +56,12 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #############################################################################
 
-# ############################# Removing packages ############################################################
-pacman -R --noconfirm swell-foop tali gnome-mines gnome-tetravex gnome-recipes accerciser gnome-boxes
-pacman -R --noconfirm gnome-nibbles gnome-sudoku hitori quadrapassel gnome-builder devhelp lftp gnome-software
-pacman -R --noconfirm gnome-robots five-or-more four-in-a-row gnome-mahjongg ipython gnome-backgrounds
-pacman -R --noconfirm gnome-klotski gnome-taquin iagno lightsoff polari gnome-multi-writer epiphany 
-# ############################################################################################################
+# # ############################# Removing packages ############################################################
+# pacman -R --noconfirm swell-foop tali gnome-mines gnome-tetravex gnome-recipes accerciser gnome-boxes
+# pacman -R --noconfirm gnome-nibbles gnome-sudoku hitori quadrapassel gnome-builder devhelp lftp gnome-software
+# pacman -R --noconfirm gnome-robots five-or-more four-in-a-row gnome-mahjongg ipython gnome-backgrounds
+# pacman -R --noconfirm gnome-klotski gnome-taquin iagno lightsoff polari gnome-multi-writer epiphany 
+# # ############################################################################################################
 
 # ############ Installing custom packages to rootfs ###############
 cd /etc/skel/.magpie-packages && pacman -U --noconfirm *.pkg.tar.xz
@@ -72,11 +72,11 @@ rm -drv /etc/pacman.conf
 cp -v /etc/skel/.magpie-settings/pacman.conf /etc/
 # ##########################################################
 
-# ############################ MagpieOS Install Desktop File #####################################
-cp -v /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
-chmod +x /home/liveuser/.config/autostart/calamares.desktop
-# ################################################################################################
+# # ############################ MagpieOS Install Desktop File #####################################
+# cp -v /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
+# chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
+# chmod +x /home/liveuser/.config/autostart/calamares.desktop
+# # ################################################################################################
 
 # ########## Adding custom /etc/nanorc for Nano ########
 mv -vf /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
@@ -131,6 +131,7 @@ amixer sset Master unmute
 # #######################
 
 # ### Fixing Permisssion ##
+chown root:root /
 chmod 755 /
 # #########################
 

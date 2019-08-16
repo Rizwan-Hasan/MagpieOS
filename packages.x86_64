@@ -14,7 +14,6 @@ dialog
 dmraid
 dnsmasq
 dnsutils
-dmidecode
 dosfstools
 efibootmgr
 exfat-utils
@@ -140,7 +139,6 @@ smplayer-themes
 ## Internet
 
 chromium
-# firefox
 flashplugin
 
 ## Virtualbox Tools
@@ -190,7 +188,6 @@ magpieos-wallpaper
 magpieos-startup
 mkinitcpio-numlock
 mkinitcpio-openswap
-Numix-Cursor-Maia
 openbangla-keyboard
 ttf-freebanglafont
 package-query
