@@ -1,4 +1,0 @@
-#
-# ~/.bash_profile
-#
-
