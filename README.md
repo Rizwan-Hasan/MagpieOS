@@ -1,3 +1,6 @@
+## Repository has been moved to <a href="https://github.com/magpie-linux">https://github.com/magpie-linux</a>
+#
+
 # MagpieOS [![GitHub license](https://img.shields.io/github/license/calamares/calamares.svg)](https://github.com/Rizwan-Hasan/MagpieOS/blob/master/LICENSE)
 
 MagpieOS is based on Arch Linux<br>
